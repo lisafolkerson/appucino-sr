@@ -1,0 +1,416 @@
+/* line 1, ../style.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../style.scss */
+audio, canvas, video {
+  display: inline-block;
+}
+
+/* line 1, ../style.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 1, ../style.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 1, ../style.scss */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 1, ../style.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 1, ../style.scss */
+a:active, a:hover {
+  outline: 0;
+}
+
+/* line 1, ../style.scss */
+h1 {
+  font-size: 2em;
+}
+
+/* line 1, ../style.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 1, ../style.scss */
+b, strong {
+  font-weight: 700;
+}
+
+/* line 1, ../style.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 1, ../style.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 1, ../style.scss */
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/* line 1, ../style.scss */
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 1, ../style.scss */
+q {
+  quotes: \201C \201D \2018 \2019;
+}
+
+/* line 1, ../style.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 1, ../style.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 1, ../style.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 1, ../style.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 1, ../style.scss */
+img {
+  border: 0;
+}
+
+/* line 1, ../style.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 1, ../style.scss */
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+/* line 1, ../style.scss */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+/* line 1, ../style.scss */
+button, input {
+  line-height: normal;
+}
+
+/* line 2, ../style.scss */
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 2, ../style.scss */
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+/* line 2, ../style.scss */
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 2, ../style.scss */
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 2, ../style.scss */
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 2, ../style.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 2, ../style.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 2, ../style.scss */
+body, figure {
+  margin: 0;
+}
+
+/* line 2, ../style.scss */
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 4, ../style.scss */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* line 6, ../style.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 11, ../style.scss */
+.hide {
+  visibility: hidden;
+}
+
+/* line 17, ../style.scss */
+html {
+  font-size: 10px;
+}
+
+/* line 21, ../style.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.6;
+  font-family: 'Playfair Display', serif;
+  background: radial-gradient(ellipse at center, rgba(226, 222, 197, 0) 0%, #e2d6c5 100%);
+}
+
+/* line 31, ../style.scss */
+.wrapper {
+  margin: 0 auto;
+}
+
+/* line 35, ../style.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 40, ../style.scss */
+.gallery {
+  height: 100vh;
+  position: relative;
+}
+
+/* line 45, ../style.scss */
+.thmb {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+}
+/* line 50, ../style.scss */
+.thmb img {
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* line 58, ../style.scss */
+.thmb-heart,
+.thmb-rosetta {
+  left: 5%;
+}
+
+/* line 63, ../style.scss */
+.thmb-tulip,
+.thmb-swan {
+  right: 5%;
+}
+
+/* line 68, ../style.scss */
+.thmb-heart,
+.thmb-swan {
+  top: 5%;
+}
+
+/* line 73, ../style.scss */
+.thmb-rosetta,
+.thmb-tulip {
+  bottom: 5%;
+}
+
+/* line 78, ../style.scss */
+.feature {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  max-width: 60%;
+}
+
+/* line 86, ../style.scss */
+p.small {
+  font-size: 1.4rem;
+  line-height: 1;
+  font-style: italic;
+  text-align: center;
+  bottom-padding: 20px;
+}
+
+/* line 95, ../style.scss */
+header {
+  text-align: center;
+  position: absolute;
+  top: -40px;
+  width: 100%;
+  z-index: -10;
+}
+/* line 102, ../style.scss */
+header h1 {
+  font-size: 22rem;
+  margin: 0;
+}
+/* line 107, ../style.scss */
+header p {
+  font-size: 2.2rem;
+  line-height: 1.8;
+  font-style: italic;
+  padding: 0 8rem;
+}
+/* line 114, ../style.scss */
+header .subtitle {
+  font-style: italic;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  padding: 0;
+}
+
+/* line 125, ../style.scss */
+.artboard {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+/* line 131, ../style.scss */
+.featured-img img {
+  border-radius: 50%;
+  border: 9px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* line 138, ../style.scss */
+.featured-text {
+  text-align: center;
+  padding: 0 7em;
+}
+/* line 142, ../style.scss */
+.featured-text p {
+  margin-top: 1rem;
+}
+/* line 146, ../style.scss */
+.featured-text h2 {
+  margin-bottom: 0;
+}
+/* line 150, ../style.scss */
+.featured-text h3 {
+  font-style: italic;
+  font-weight: 400;
+  margin: 0.7rem 0;
+}
+
+/* line 158, ../style.scss */
+.tracing {
+  position: absolute;
+}
+
+/* line 162, ../style.scss */
+.path-swan {
+  -webkit-animation: dash 6s linear forwards infinite;
+  animation: dash 6s linear forwards infinite;
+  stroke-dashoffset: 4780;
+  stroke-dasharray: 4780;
+}
+
+/* line 169, ../style.scss */
+.path-rosetta {
+  -webkit-animation: dash 7s linear infinite;
+  animation: dash 7s linear infinite;
+  animation-direction: normal;
+  stroke-dashoffset: -5280;
+  stroke-dasharray: 5280;
+}
+
+/* line 177, ../style.scss */
+.path-heart {
+  -webkit-animation: dash 4s linear forwards infinite;
+  animation: dash 4s linear forwards infinite;
+  stroke-dashoffset: 2810;
+  stroke-dasharray: 2810;
+}
+
+/* line 184, ../style.scss */
+.path-tulip {
+  -webkit-animation: dash 6s linear forwards infinite;
+  animation: dash 6s linear forwards infinite;
+  stroke-dashoffset: 2580;
+  stroke-dasharray: 2580;
+}
+
+@-webkit-keyframes dash {
+  /* line 192, ../style.scss */
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  /* line 198, ../style.scss */
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* line 203, ../style.scss */
+.paused {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
