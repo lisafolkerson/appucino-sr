@@ -1,5 +1,3 @@
-
-
 $(function() {
 		console.log( 'we\'ll b ok' );
 
@@ -24,6 +22,7 @@ $(function() {
 
 			// Create variable to switch out the svg
 			var svg = $(this).data('svgpath');
+			var svg2 = $(this).data('svgpath2');
 
 			
 			// =========== Hide stuff ================
@@ -75,63 +74,34 @@ $(function() {
 			$( '.featured-text p' ).text(instructions);
 
 			//switch in the svg
-			$( 'svg path' ).attr('d', svg);
+			$( 'svg #path' ).attr('d', svg);
+			console.log($( 'svg .path2' ));
+			$( 'svg #path2' ).attr('d', svg2);
+
 
 		}); // end on .thmb click
-
-
-		// close feature gallery by clicking outside it
-		$( '.wrapper' ).on( 'click', function() {
-			// $( 'header' ).removeClass( 'hide' );
-			if ($( 'div' ).hasClass( 'thmb' )) {
-				console.log('stay the same');
-			} else {
-				$( 'header' ).removeClass( 'hide' );
-			};
-		});
 
 
 		// =========== Fit Text :) ================
 		$("header h1").fitText(0.5);
 
-		// ========================= 
-		// NONE OF THIS SHIT WORKS ⬇︎
-		// 💩💩💩💩💩💩💩💩💩💩💩💩💩💩
-		// =========================
 
-		// $( '.artboard' ).on('mouseleave',function() {
-		// 	console.log('hi hi oo');
+		$( '.feature' ).on( 'click', function(){
+			$( '.feature' ).fadeOut(400,
+				function() {
+					this.remove();
+				});
+			$( 'header' ).removeClass( 'hide' );
+			});
 
-		// 	if ($( 'svg path' ).hasClass( 'path-swan' )) {
-		// 	$( 'svg path' ).attr( 'class', 'path-swan paused' );
-		// } 
-		// 	else if ($( 'svg path' ).hasClass( 'path-rosetta' )) {
-		// 	$( 'svg path' ).attr( 'class', 'path-rosetta paused' );
-		// } 
-		// 	else if ($( 'svg path' ).hasClass( 'path-tulip' )) {
-		// 	$( 'svg path' ).attr( 'class', 'path-tulip paused' );
-		// } 
-		// 	else {
-		// 	$( 'svg path' ).attr( 'class', 'path-heart paused' );
-		// 	}
-		// });
+		$( document ).keyup( function(e) {
+			if ( e.keyCode == 27 ) {
+				$('.feature').fadeOut(400, function() {
+					this.remove();
+				});
+			}
+		}); //end whatever	
 
-		// $( '.artboard' ).on('mouseenter',function() {
-		// 	console.log('auf wiedersehen');
-
-		// 	if ($( 'svg path' ).hasClass( 'path-swan' )) {
-		// 	$( 'svg path' ).attr( 'class', 'path-swan resume' );
-		// } 
-		// 	else if ($( 'svg path' ).hasClass( 'path-rosetta' )) {
-		// 	$( 'svg path' ).attr( 'class', 'path-rosetta resume' );
-		// } 
-		// 	else if ($( 'svg path' ).hasClass( 'path-tulip' )) {
-		// 	$( 'svg path' ).attr( 'class', 'path-tulip resume' );
-		// } 
-		// 	else {
-		// 	$( 'svg path' ).attr( 'class', 'path-heart resume' );
-		// 	}
-		// });
 
 
 }); //End jQuery
