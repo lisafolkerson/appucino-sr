@@ -1,0 +1,106 @@
+// SVG Animations ------------------------------------------------
+.tracing {
+	position: absolute;
+	width: 100%;
+}
+
+.path-swan {
+	-webkit-animation: dash 6s linear forwards infinite;
+	animation: dash 6s linear forwards infinite;
+	stroke-dashoffset: 4780;
+  stroke-dasharray: 4780;
+}
+
+.path-rosetta {
+  -webkit-animation: dash 7s linear infinite;	
+  animation: dash 7s linear infinite;
+  animation-direction: normal;
+ 	stroke-dashoffset: -5280;
+  stroke-dasharray: 5280;
+}
+
+.path-heart {
+	-webkit-animation: dash 4s linear forwards infinite;
+	animation: dash 4s linear forwards infinite, 
+	;
+	stroke-dashoffset: 2810;
+  stroke-dasharray: 2810;
+}
+
+#path.path-tulip {
+	-webkit-animation: tulip-dash 12s linear forwards infinite;
+	animation: tulip-dash 12s linear forwards infinite;
+	stroke-dashoffset: 2580;
+  stroke-dasharray: 2580;
+}
+#path2.path-tulip {
+	-webkit-animation: tulip-dashx 12s linear forwards infinite;
+	animation: tulip-dashx 12s linear forwards infinite;
+	stroke-dashoffset: -1080;
+  stroke-dasharray: 1080; 
+}
+ 
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+	}
+} 
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes tulip-dash {
+  0% {
+	stroke-dashoffset: 2580;
+  }
+  50% {
+	stroke-dashoffset: 0;
+  }
+  100% {
+	stroke-dashoffset: 0;
+  }
+} 
+
+@keyframes tulip-dash {
+  0% {
+	stroke-dashoffset: 2580;
+  }
+  50% {
+	stroke-dashoffset: 0;
+  }
+  100% {
+	stroke-dashoffset: 0;
+  }
+} 
+
+@-webkit-keyframes tulip-dashx {
+  0% {
+	stroke-dashoffset: 1080;
+  }
+  50% {
+	stroke-dashoffset: 1080;
+  }
+  100% {
+	stroke-dashoffset: 0;
+  }
+} 
+
+@keyframes tulip-dashx {
+  0% {
+	stroke-dashoffset: 1080;
+  }
+  50% {
+	stroke-dashoffset: 1080;
+  }
+  100% {
+	stroke-dashoffset: 0;
+  }
+} 
+
+.paused{
+    -webkit-animation-play-state:paused;
+    animation-play-state:paused;
+}

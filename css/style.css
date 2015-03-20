@@ -161,7 +161,7 @@ img {
   position: relative; }
 
 .thmb {
-  width: 20%;
+  width: 17%;
   position: absolute; }
   .thmb img {
     border-radius: 50%;
@@ -180,14 +180,6 @@ img {
 .thmb-rosetta, .thmb-tulip {
   bottom: 5%; }
 
-@media (max-width: 1080px) {
-  .feature {
-    position: absolute;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    left: 50%;
-    max-width: 63%; } }
-
 p.small {
   font-size: 1.4rem;
   line-height: 1;
@@ -202,7 +194,8 @@ header {
   position: absolute;
   top: -40px;
   width: 100%;
-  z-index: -10; }
+  z-index: -10;
+  padding: 0 22%; }
   header h1 {
     font-size: 11vw;
     margin: 0;
@@ -214,7 +207,7 @@ header {
     margin-top: 0;
     padding: 0; }
   header p {
-    font-size: 2vw;
+    font-size: 1.5vw;
     line-height: 1.8;
     font-style: italic; }
 
@@ -231,15 +224,27 @@ header {
   width: 100%; }
 
 .featured-text {
-  text-align: center; }
+  text-align: center;
+  position: relative;
+  top: -0.7rem; }
   .featured-text p {
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    padding: 0 15%;
+    padding-bottom: 200px; }
   .featured-text h2 {
     margin-bottom: 0; }
   .featured-text h3 {
     font-style: italic;
     font-weight: 400;
     margin: 0.7rem 0; }
+
+@media (max-width: 1080px) {
+  .artboard {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%;
+    max-width: 90%; } }
 
 .tracing {
   position: absolute;
@@ -327,4 +332,3 @@ header {
 .paused {
   -webkit-animation-play-state: paused;
   animation-play-state: paused; }
-

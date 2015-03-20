@@ -14,5 +14,5 @@ gulp.task( 'styles', function() {
 	});
 
 gulp.task( 'watch', function() {
-	gulp.watch('*.scss',['styles'])
+	gulp.watch('**/*.scss',['styles'])
 	});

@@ -41,7 +41,7 @@ img {
 }
 
 .thmb {
-	width: 20%;
+	width: 17%;
 	position: absolute;
 
 	img {
@@ -73,13 +73,7 @@ img {
 
 // Main content area
 .feature {
-	@media (max-width:1080px) {
-		position: absolute;
-		top: 50%;
-		transform: translateX(-50%) translateY(-50%);
-		left: 50%;
-		max-width: 63%;
-	}
+
 }
 
 p.small {
@@ -88,7 +82,6 @@ p.small {
 		font-style: italic;
 		text-align: center;
 		bottom-padding: 20px;
-		// position: relative;
 	    width: 100%;
 	    display: block;	
 	}
@@ -100,6 +93,7 @@ header {
 	top: -40px;
 	width: 100%;
 	z-index: -10;
+	padding: 0 22%;
 
 	
 	h1 {
@@ -117,7 +111,7 @@ header {
 	}
 
 	p {
-		font-size: 2vw;
+		font-size: 1.5vw;
 		line-height: 1.8;
 		font-style: italic;
 		
@@ -136,16 +130,19 @@ header {
 	border-radius: 50%;
 	border: 9px solid white;
 	box-shadow: 0 0 10px rgba(0,0,0,0.2);
-	width: 100%
-
-}
+	width: 100%;
+} 
 
 // Featured text  ---------------------------------
 .featured-text {
 	text-align: center;
+	position: relative;
+	top: -0.7rem;
 	
 	p {
 		margin-top: 1rem;
+		padding: 0 15%;
+		padding-bottom: 200px;
 	}
 
 	h2 {
@@ -159,111 +156,5 @@ header {
 	}
 }
 
-// SVG Animations ------------------------------------------------
-.tracing {
-	position: absolute;
-	width: 100%;
-}
-
-.path-swan {
-	-webkit-animation: dash 6s linear forwards infinite;
-	animation: dash 6s linear forwards infinite;
-	stroke-dashoffset: 4780;
-  stroke-dasharray: 4780;
-}
-
-.path-rosetta {
-  -webkit-animation: dash 7s linear infinite;	
-  animation: dash 7s linear infinite;
-  animation-direction: normal;
- 	stroke-dashoffset: -5280;
-  stroke-dasharray: 5280;
-}
-
-.path-heart {
-	-webkit-animation: dash 4s linear forwards infinite;
-	animation: dash 4s linear forwards infinite, 
-	;
-	stroke-dashoffset: 2810;
-  stroke-dasharray: 2810;
-}
-
-#path.path-tulip {
-	-webkit-animation: tulip-dash 12s linear forwards infinite;
-	animation: tulip-dash 12s linear forwards infinite;
-	stroke-dashoffset: 2580;
-  stroke-dasharray: 2580;
-}
-#path2.path-tulip {
-	-webkit-animation: tulip-dashx 12s linear forwards infinite;
-	animation: tulip-dashx 12s linear forwards infinite;
-	stroke-dashoffset: -1080;
-  stroke-dasharray: 1080; 
-}
- 
-@-webkit-keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-	}
-} 
-
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@-webkit-keyframes tulip-dash {
-  0% {
-	stroke-dashoffset: 2580;
-  }
-  50% {
-	stroke-dashoffset: 0;
-  }
-  100% {
-	stroke-dashoffset: 0;
-  }
-} 
-
-@keyframes tulip-dash {
-  0% {
-	stroke-dashoffset: 2580;
-  }
-  50% {
-	stroke-dashoffset: 0;
-  }
-  100% {
-	stroke-dashoffset: 0;
-  }
-} 
-
-@-webkit-keyframes tulip-dashx {
-  0% {
-	stroke-dashoffset: 1080;
-  }
-  50% {
-	stroke-dashoffset: 1080;
-  }
-  100% {
-	stroke-dashoffset: 0;
-  }
-} 
-
-@keyframes tulip-dashx {
-  0% {
-	stroke-dashoffset: 1080;
-  }
-  50% {
-	stroke-dashoffset: 1080;
-  }
-  100% {
-	stroke-dashoffset: 0;
-  }
-} 
-
-.paused{
-    -webkit-animation-play-state:paused;
-    animation-play-state:paused;
-}
-
 @import "mediaQueries";
+@import "animations";
