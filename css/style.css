@@ -192,7 +192,10 @@ p.small {
   line-height: 1;
   font-style: italic;
   text-align: center;
-  bottom-padding: 20px; }
+  bottom-padding: 20px;
+  position: relative;
+  width: 100%;
+  display: block; }
 
 header {
   text-align: center;

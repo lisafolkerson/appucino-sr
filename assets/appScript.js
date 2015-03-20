@@ -78,29 +78,28 @@ $(function() {
 			console.log($( 'svg .path2' ));
 			$( 'svg #path2' ).attr('d', svg2);
 
-
 		}); // end on .thmb click
+
+
 
 
 		// =========== Fit Text :) ================
 		$("header h1").fitText(0.5);
 
-
-		$( '.feature' ).on( 'click', function(){
-			$( '.feature' ).fadeOut(400,
-				function() {
-					this.remove();
-				});
+		// =========== Remove artboard and return main screen WHEN :) ================
+		$( '.artboard' ).on( 'click', function(){
+			$( '.artboard' ).addClass( 'hide' );
+			$( '.featured-text' ).addClass( 'hide' );
 			$( 'header' ).removeClass( 'hide' );
 			});
 
 		$( document ).keyup( function(e) {
 			if ( e.keyCode == 27 ) {
-				$('.feature').fadeOut(400, function() {
-					this.remove();
-				});
-			}
-		}); //end whatever	
+				$('.artboard').addClass( 'hide' );
+				$( '.featured-text' ).addClass( 'hide' );
+				$( 'header' ).removeClass( 'hide' );			
+			};
+		}); //end keyup
 
 
 
