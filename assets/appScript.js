@@ -1,7 +1,6 @@
 $(function() {
 		console.log( 'we\'ll b ok' );
 
-
 		// When you click the thumbnail...
 		$( '.thmb' ).on( 'click', function() {
 
@@ -83,21 +82,21 @@ $(function() {
 
 
 
-		// =========== Fit Text :) ================
-		$("header h1").fitText(0.5);
+		
 
 		// =========== Remove artboard and return main screen WHEN :) ================
 		$( '.artboard' ).on( 'click', function(){
+			$( 'header' ).removeClass( 'hide' );
 			$( '.artboard' ).addClass( 'hide' );
 			$( '.featured-text' ).addClass( 'hide' );
-			$( 'header' ).removeClass( 'hide' );
+
 			});
 
 		$( document ).keyup( function(e) {
 			if ( e.keyCode == 27 ) {
+				$( 'header' ).removeClass( 'hide' );			
 				$('.artboard').addClass( 'hide' );
 				$( '.featured-text' ).addClass( 'hide' );
-				$( 'header' ).removeClass( 'hide' );			
 			};
 		}); //end keyup
 

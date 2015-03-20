@@ -150,7 +150,8 @@ body {
   background: radial-gradient(ellipse at center, rgba(226, 222, 197, 0) 0%, #E2D6C5 100%); }
 
 .wrapper {
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 100%; }
 
 img {
   max-width: 100%; }
@@ -160,8 +161,7 @@ img {
   position: relative; }
 
 .thmb {
-  width: 200px;
-  height: 200px;
+  width: 20%;
   position: absolute; }
   .thmb img {
     border-radius: 50%;
@@ -180,12 +180,13 @@ img {
 .thmb-rosetta, .thmb-tulip {
   bottom: 5%; }
 
-.feature {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  margin: 0 auto;
-  max-width: 60%; }
+@media (max-width: 1080px) {
+  .feature {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%;
+    max-width: 63%; } }
 
 p.small {
   font-size: 1.4rem;
@@ -193,7 +194,6 @@ p.small {
   font-style: italic;
   text-align: center;
   bottom-padding: 20px;
-  position: relative;
   width: 100%;
   display: block; }
 
@@ -204,33 +204,34 @@ header {
   width: 100%;
   z-index: -10; }
   header h1 {
-    font-size: 22rem;
-    margin: 0; }
-  header p {
-    font-size: 2.2rem;
-    line-height: 1.8;
-    font-style: italic;
-    padding: 0 8rem; }
+    font-size: 11vw;
+    margin: 0;
+    margin-top: 100px; }
   header .subtitle {
     font-style: italic;
-    font-size: 4rem;
+    font-size: 3vw;
     font-weight: 700;
     margin-top: 0;
     padding: 0; }
+  header p {
+    font-size: 2vw;
+    line-height: 1.8;
+    font-style: italic; }
 
 .artboard {
-  width: 600px;
-  height: 600px;
-  margin: 0 auto; }
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative; }
 
 .featured-img img {
   border-radius: 50%;
   border: 9px solid white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 100%; }
 
 .featured-text {
-  text-align: center;
-  padding: 0 7em; }
+  text-align: center; }
   .featured-text p {
     margin-top: 1rem; }
   .featured-text h2 {
@@ -241,7 +242,8 @@ header {
     margin: 0.7rem 0; }
 
 .tracing {
-  position: absolute; }
+  position: absolute;
+  width: 100%; }
 
 .path-swan {
   -webkit-animation: dash 6s linear forwards infinite;
@@ -325,3 +327,4 @@ header {
 .paused {
   -webkit-animation-play-state: paused;
   animation-play-state: paused; }
+
